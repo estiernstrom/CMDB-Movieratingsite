@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <title>CMDB</title>
+</head>
+
+<body>
+    <header>
+        <h1>CMDB</h1>
+        <p>Cineasternas Movie Data Base</p>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+        </ul>
+        <div class="searchbar">
+            <form id="search-form" action="sökresultat.html" method="get">
+                <input type="text" placeholder="Sök..." name="search" id="search-input" required>
+                <button type="submit" class="btn-search">Sök</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="om-oss-container">
+        <aside>
+            <h2>CMDb</h2>
+            <img src="logotyp.png" alt="CMDb logotyp">
+
+        </aside>
+        <section class="om-oss">
+            <h1>
+                Cineasternas Movie Data Base (CMDB)
+            </h1>
+            <p>
+                I filmens fascinerande värld har passionerade cineaster ständigt strävat efter att utforska, analysera
+                och dela sina insikter och känslor kring den sjunde konsten. År 2015 grundades Cineasternas Movie Data
+                Base, eller CMDB, ur en önskan att skapa en bro mellan traditionell filmkritik och den ständigt
+                framväxande digitala arenan. Fyra visionära filmälskare – en filmskapare, en historiker, en kritiker och
+                en datavetare – från olika delar av världen kom samman med en gemensam dröm: att skapa en plattform som
+                var lika mångfacetterad och komplex som filmmediet självt.
+            </p>
+            </br>
+            <p>
+                Med över två miljoner medlemmar är CMDB inte bara en databas utan en levande, pulserande gemenskap av
+                filmentusiaster, professionella filmskapare, kritiker och en mängd filmälskare som alla delar en passion
+                för filmens konstform. Denna kollektiva kärlek till film har skapat en plattform där varje röst är
+                betydelsefull och varje medlems bidrag hjälper till att förstärka och bredda vår förståelse och
+                uppskattning av film.
+            </p>
+            </br>
+            <p>
+                CMDB var från början mer än bara en filmdatabas; det var ett projekt som skulle revolutionera sättet vi
+                interagerade med filmer på nätet. Visionen var att transcendera traditionella gränser och skapa en
+                plattform som inkluderade alla aspekter av filmen - från olika genrer och tidsepoker till olika
+                kulturella perspektiv. Genom en omfattande databas strävar CMDB efter att representera filmer från alla
+                epoker och genrer, och att vara en källa till kunskap och uppskattning för filmkonst från alla världens
+                hörn.
+            </p>
+            </br>
+            <p>
+                Vad som särskiljer CMDB från andra plattformar är dess förmåga att skapa en hybrid av klassiska och
+                moderna teknologiska aspekter. Med hjälp av innovativa teknologiska lösningar som artificiell
+                intelligens och maskininlärning ger plattformen sina användare skräddarsydda rekommendationer baserade
+                på deras tidigare interaktioner och smakpreferenser, samtidigt som det skapas utrymme för upptäckten av
+                nya filmer och genrer.
+            </p>
+            </br>
+            <p>
+                CMDB:s ständiga engagemang i sin community går utöver de digitala gränserna. Plattformen strävar inte
+                bara efter att vara en passiv informationskälla utan också en aktiv organisatör av evenemang och
+                diskussioner som vidare bidrar till filmkulturens rika landskap. Online-evenemang såsom exklusiva
+                premiärvisningar, diskussionspaneler, frågestunder med filmskapare och kritiker och andra exklusiva
+                tillfällen gör att medlemmarna ständigt är engagerade och får nya insikter.
+            </p>
+            </br>
+            <p>
+                Tillgänglighet är en annan nyckelfaktor i CMDB:s framgång. Plattformen är utformad för att vara
+                tillgänglig för alla, oavsett enhet eller användningsförmåga, och den strävar ständigt efter att vara en
+                plats där alla känner sig välkomna och värdefulla. Det här inkluderar att vara ett stöd för filmskapare
+                och kritiker från underrepresenterade grupper och att säkerställa att plattformen ständigt är ett
+                stödjande och inkluderande utrymme.
+            </p>
+            </br>
+            <p>
+                CMDB blickar framåt mot en framtid där plattformen fortsätter att växa och anpassa sig till
+                förändringarna i teknologi och mediekonsumtion. Genom ständig dialog med sin community och en vilja att
+                alltid sträva efter förbättring och innovation, utvecklas CMDB kontinuerligt för att möta och överträffa
+                sina användares förväntningar och behov.
+            </p>
+            </br>
+            <p>
+                I sin kärna är CMDB en plats där kärleken till film är central. Det är en plattform där entusiaster,
+                oavsett om de är nya på området eller har ett livslångt engagemang för film, kan komma samman för att
+                utforska, diskutera och dela sin passion. Det är en plats där varje film, från den mest obskyra
+                indieproduktionen till storfilmer, har en plats och där varje röst räknas.
+            </p>
+            </br>
+            <p>
+                För mer information eller för att delta i denna fantastiska gemenskap, besök CMDB på www.cmdb.com eller
+                kontakta teamet direkt via e-post på info@cmdb.com. CMDB välkomnar dig till en värld där filmerna är
+                lika gränslösa som de samtal de inspirerar.
+            </p>
+        </section>
+
+        <article>
+
+            <h2>Kontakta oss</h2>
+            <div class="contact-form">
+                <form action="/action_page.php">
+                    <label for="fname">Förnamn</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn.." required>
+                    <br />
+                    <label for="lname">Efternamn</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn.." required>
+                    <br />
+                    <label for="date">DATUM:</label> <br>
+                    <input type="date" id="date" name="date" required>
+                    <br />
+                    <label for="country">Land</label>
+                    <select id="country" name="country" required>
+                        <option value="afghanistan">Afghanistan</option>
+                        <option value="albanien">Albanien</option>
+                        <option value="algeriet">Algeriet</option>
+                        <option value="andorra">Andorra</option>
+                        <option value="angola">Angola</option>
+                        <option value="antigua_och_barbuda">Antigua och Barbuda</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="armenien">Armenien</option>
+                        <option value="australien">Australien</option>
+                        <option value="azerbajdzjan">Azerbajdzjan</option>
+                        <option value="bahamas">Bahamas</option>
+                        <option value="bahrain">Bahrain</option>
+                        <option value="bangladesh">Bangladesh</option>
+                        <option value="barbados">Barbados</option>
+                        <option value="belgien">Belgien</option>
+                        <option value="belize">Belize</option>
+                        <option value="benin">Benin</option>
+                        <option value="bhutan">Bhutan</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="bosnien_och_hercegovina">Bosnien och Hercegovina</option>
+                        <option value="botswana">Botswana</option>
+                        <option value="brasilien">Brasilien</option>
+                        <option value="brunei">Brunei</option>
+                        <option value="bulgarien">Bulgarien</option>
+                        <option value="burkina_faso">Burkina Faso</option>
+                        <option value="burundi">Burundi</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="costa_rica">Costa Rica</option>
+                        <option value="cypern">Cypern</option>
+                        <option value="danmark">Danmark</option>
+                        <option value="djibouti">Djibouti</option>
+                        <option value="dominica">Dominica</option>
+                        <option value="dominikanska_republiken">Dominikanska republiken</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="egypten">Egypten</option>
+                        <option value="ekvatorialguinea">Ekvatorialguinea</option>
+                        <option value="el_salvador">El Salvador</option>
+                        <option value="elfenbenskusten">Elfenbenskusten</option>
+                        <option value="eritrea">Eritrea</option>
+                        <option value="estland">Estland</option>
+                        <option value="eswatini">Eswatini</option>
+                        <option value="etiopien">Etiopien</option>
+                        <option value="fiji">Fiji</option>
+                        <option value="filippinerna">Filippinerna</option>
+                        <option value="finland">Finland</option>
+                        <option value="frankrike">Frankrike</option>
+                        <option value="forenade_arabemiraten">Förenade Arabemiraten</option>
+                        <option value="gabon">Gabon</option>
+                        <option value="gambia">Gambia</option>
+                        <option value="georgien">Georgien</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="grekland">Grekland</option>
+                        <option value="grenada">Grenada</option>
+                        <option value="guatemala">Guatemala</option>
+                        <option value="guinea">Guinea</option>
+                        <option value="guinea-bissau">Guinea-Bissau</option>
+                        <option value="guyana">Guyana</option>
+                        <option value="haiti">Haiti</option>
+                        <option value="honduras">Honduras</option>
+                        <option value="indien">Indien</option>
+                        <option value="indonesien">Indonesien</option>
+                        <option value="irak">Irak</option>
+                        <option value="iran">Iran</option>
+                        <option value="irland">Irland</option>
+                        <option value="island">Island</option>
+                        <option value="israel">Israel</option>
+                        <option value="italien">Italien</option>
+                        <option value="jamaica">Jamaica</option>
+                        <option value="japan">Japan</option>
+                        <option value="jemen">Jemen</option>
+                        <option value="jordanien">Jordanien</option>
+                        <option value="kambodja">Kambodja</option>
+                        <option value="kamerun">Kamerun</option>
+                        <option value="kanada">Kanada</option>
+                        <option value="kap_verde">Kap Verde</option>
+                        <option value="kazakstan">Kazakstan</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="kina">Kina</option>
+                        <option value="kirgisistan">Kirgisistan</option>
+                        <option value="kiribati">Kiribati</option>
+                        <option value="komorerna">Komorerna</option>
+                        <option value="kongo-brazzaville">Kongo-Brazzaville</option>
+                        <option value="kongo-kinshasa">Kongo-Kinshasa</option>
+                        <option value="kosovo">Kosovo</option>
+                        <option value="kroatien">Kroatien</option>
+                        <option value="kuba">Kuba</option>
+                        <option value="kuwait">Kuwait</option>
+                        <option value="laos">Laos</option>
+                        <option value="lesotho">Lesotho</option>
+                        <option value="lettland">Lettland</option>
+                        <option value="libanon">Libanon</option>
+                        <option value="liberia">Liberia</option>
+                        <option value="libyen">Libyen</option>
+                        <option value="liechtenstein">Liechtenstein</option>
+                        <option value="litauen">Litauen</option>
+                        <option value="luxemburg">Luxemburg</option>
+                        <option value="madagaskar">Madagaskar</option>
+                        <option value="makedonien">Makedonien</option>
+                        <option value="malawi">Malawi</option>
+                        <option value="malaysia">Malaysia</option>
+                        <option value="maldiverna">Maldiverna</option>
+                        <option value="mali">Mali</option>
+                        <option value="malta">Malta</option>
+                        <option value="marocko">Marocko</option>
+                        <option value="marshallöarna">Marshallöarna</option>
+                        <option value="mauretanien">Mauretanien</option>
+                        <option value="mauritius">Mauritius</option>
+                        <option value="mexiko">Mexiko</option>
+                        <option value="mikronesien">Mikronesien</option>
+                        <option value="moldavien">Moldavien</option>
+                        <option value="monaco">Monaco</option>
+                        <option value="mongoliet">Mongoliet</option>
+                        <option value="montenegro">Montenegro</option>
+                        <option value="moçambique">Moçambique</option>
+                        <option value="myanmar">Myanmar</option>
+                        <option value="namibia">Namibia</option>
+                        <option value="nauru">Nauru</option>
+                        <option value="nederländerna">Nederländerna</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="nicaragua">Nicaragua</option>
+                        <option value="niger">Niger</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="nordkorea">Nordkorea</option>
+                        <option value="norge">Norge</option>
+                        <option value="nya_zeeland">Nya Zeeland</option>
+                        <option value="oman">Oman</option>
+                        <option value="pakistan">Pakistan</option>
+                        <option value="palau">Palau</option>
+                        <option value="panama">Panama</option>
+                        <option value="papua_nya_guinea">Papua Nya Guinea</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Peru</option>
+                        <option value="polen">Polen</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="qatar">Qatar</option>
+                        <option value="rumänien">Rumänien</option>
+                        <option value="rwanda">Rwanda</option>
+                        <option value="ryssland">Ryssland</option>
+                        <option value="saint_kitts_och_nevis">Saint Kitts och Nevis</option>
+                        <option value="saint_lucia">Saint Lucia</option>
+                        <option value="saint_vincent_och_grenadinerna">Saint Vincent och Grenadinerna</option>
+                        <option value="samoa">Samoa</option>
+                        <option value="san_marino">San Marino</option>
+                        <option value="são_tomé_och_príncipe">São Tomé och Príncipe</option>
+                        <option value="saudi_arabien">Saudi Arabien</option>
+                        <option value="schweiz">Schweiz</option>
+                        <option value="senegal">Senegal</option>
+                        <option value="serbien">Serbien</option>
+                        <option value="seychellerna">Seychellerna</option>
+                        <option value="sierra_leone">Sierra Leone</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="skottland">Skottland</option>
+                        <option value="slovakien">Slovakien</option>
+                        <option value="slovenien">Slovenien</option>
+                        <option value="salomonöarna">Salomonöarna</option>
+                        <option value="somalien">Somalien</option>
+                        <option value="spanien">Spanien</option>
+                        <option value="sri_lanka">Sri Lanka</option>
+                        <option value="sudan">Sudan</option>
+                        <option value="surinam">Surinam</option>
+                        <option value="sverige">Sverige</option>
+                        <option value="sydafrika">Sydafrika</option>
+                        <option value="sydkorea">Sydkorea</option>
+                        <option value="sydsudan">Sydsudan</option>
+                        <option value="syrien">Syrien</option>
+                        <option value="tadzjikistan">Tadzjikistan</option>
+                        <option value="taiwan">Taiwan</option>
+                        <option value="tanzania">Tanzania</option>
+                        <option value="tchad">Tchad</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="tjeckien">Tjeckien</option>
+                        <option value="togo">Togo</option>
+                        <option value="tonga">Tonga</option>
+                        <option value="trinidad_och_tobago">Trinidad och Tobago</option>
+                        <option value="tunisien">Tunisien</option>
+                        <option value="turkiet">Turkiet</option>
+                        <option value="turkmenistan">Turkmenistan</option>
+                        <option value="tuvalu">Tuvalu</option>
+                        <option value="tyskland">Tyskland</option>
+                        <option value="uganda">Uganda</option>
+                        <option value="ukraina">Ukraina</option>
+                        <option value="ungern">Ungern</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="usa">USA</option>
+                        <option value="uzbekistan">Uzbekistan</option>
+                        <option value="vanuatu">Vanuatu</option>
+                        <option value="vatikanstaten">Vatikanstaten</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="vietnam">Vietnam</option>
+                        <option value="vitryssland">Vitryssland</option>
+                        <option value="wales">Wales</option>
+                        <option value="zambia">Zambia</option>
+                        <option value="zimbabwe">Zimbabwe</option>
+                        <option value="österrike">Österrike</option>
+
+                    </select>
+                    <br />
+                    <label for="subject">Meddelande</label>
+                    <textarea id="subject" name="subject" placeholder="Skriv ditt meddelande.." style="height:200px"
+                        required></textarea>
+                    <input type="submit" value="Skicka">
+                </form>
+            </div>
+        </article>
+    </div>
+
+
+    <script src="script.js"></script>
+    <footer>
+        <p> © Miunfilms. All rights reserved.
+        <h1>Dagens datum och tid: <span id="currentDate"></span></h1>
+        </p>
+        <p>
+        <h2 id="countdown">Time left: </h2>
+        </p>
+        <p> Hem | Detaljsida | Sökresultat | Om oss </p>
+
+    </footer>
+</body>
+
+</html>

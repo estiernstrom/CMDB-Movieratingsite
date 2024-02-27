@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <title>CMDB</title>
+</head>
+
+<body>
+    <header>
+        <h1>CMDB</h1>
+        <p>Cineasternas Movie Data Base</p>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="omoss.html">Om oss</a></li>
+        </ul>
+        <div class="searchbar">
+            <form id="search-form" action="sökresultat.html" method="get">
+                <input type="text" placeholder="Sök..." name="search" id="search-input" required>
+                <button type="submit" class="btn-search">Sök</button>
+            </form>
+    </nav>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item horizontal-left">
+            <h1 id="search-result-h1">Sökresultat</h1>
+        </div>
+        <div class="flex-item search-result" id="movies">
+        </div>
+
+
+    </div>
+
+    <div id="no-results" class="flex-container-sök">
+        <section class="sökstyle">
+            <h1>
+                Hoppsan! Det verkar som att din sökning inte gav något resultat. Försök igen!
+            </h1>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <p> © Miunfilms. All rights reserved.
+        <h1>Dagens datum och tid: <span id="currentDate"></span></h1>
+        </p>
+        <p>
+        <h2 id="countdown">Time left: </h2>
+        </p>
+        <p> Hem | Detaljsida | Sökresultat | Om oss </p>
+
+    </footer>
+</body>
+
+</html
